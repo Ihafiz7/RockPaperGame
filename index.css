@@ -1,0 +1,122 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    justify-content: space-evenly;
+    background-color: black;
+    color: antiquewhite;
+    margin-bottom: 2px;
+}
+
+.logo, .time{
+    font-weight: bold;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Orbitron";
+    font-size: 24px;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: antiquewhite;
+    gap: 10px;
+    padding-top: 10px;
+}
+
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+}
+
+
+.svg-button{
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.svg-button>p{
+    font-family: 'Orbitron';
+    font-weight: 600;
+}
+
+.svg-button>p:hover{
+    color: green;
+}
+
+.svg-button:hover{
+    border: 3px solid green;
+}
+
+.icon{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.icon:hover{
+    transform: scale(0.9);
+}
+
+.display-move{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.pickMove{
+    background-color: black;
+    color: whitesmoke;
+    font-weight: bold;
+    font-family: 'Orbitron';
+    align-self: center;
+}
+
+.reset-button{
+    padding: 10px 10px;
+    font-family: 'Orbitron';
+    font-weight: bold;
+    background: black;
+    color: red;
+    cursor: pointer;
+    border: none;
+}
+
+.gameResult{
+    text-align: center;
+    padding: 10px;
+    font-family: 'Orbitron';
+    font-weight: bold;
+}
+
+.gameScore{
+    text-align: center;
+    padding: 5px;
+    font-family: 'Orbitron';
+    font-weight: bold;
+}

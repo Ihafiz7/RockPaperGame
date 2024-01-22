@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Rock Paper Scissors Game</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="title">
+                <p>ROCK</p>
+                <p>PAPER</p>
+                <p>SCISSORS</p>
+            </div>
+        </header>
+        <main>
+            <p class="pickMove">PLEASE PICK A MOVE </p>
+            <div class="buttons">
+                <button type="button" class="svg-button rock">
+                    <img src="logos/rock.svg" alt="rock" class="icon" />
+                    <p>ROCK</p>
+                </button>    
+                <button type="button"class="svg-button paper">
+                    <img src="logos/paper.svg" alt="paper" class="icon" />
+                    <p>PAPER</p>
+                </button>    
+                <button type="button" class="svg-button scissor">
+                    <img src="logos/scissor.svg" alt="scissor" class="icon" />
+                    <p>SCISSOR</p>
+                </button>
+            </div>
+            <div class="display-move">
+                <p class="pickMove">Computer Has Picked !</p>
+                <p class="gameMoves"></p>
+            </div>
+
+            <div class="gameResult"></div>
+            
+            <div class="gameScore"></div>
+
+            <button type="button" id="resetScores" class="reset-button">RESET SCORE</button>
+                
+        </main>
+        <script src="index.js"></script>
+    </body>
+</html>
